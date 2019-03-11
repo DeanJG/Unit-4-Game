@@ -1,0 +1,43 @@
+body {
+    background-color: bisque;
+}
+.card-img-top {
+    height: 148px;
+    width: 148px;
+}
+.card {
+    width: 150px;
+    text-align: center;
+}
+.container {
+    margin: auto;
+    width: fit-content;
+}
+.card-body {
+    padding-top: 2px;
+    padding-bottom: 0px;
+}
+.card-footer {
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+.card-title {
+    margin-bottom: 0px;
+}
+#duelCont {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+#playerCard {
+    margin: 0 auto;
+}
+#fightSection, #dmgText {
+    margin: auto;
+    text-align: center;
+}
+#fightHeader, #dmgText {
+    width: 100%;
+}
+#winLoseMsg {
+    text-align: center;
+}

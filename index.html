@@ -3,9 +3,109 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Role Rumble</title>
+    <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css' integrity='sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T' crossorigin='anonymous'>
+    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
+    <div id="fightersCont" class="container">
+        <div class="row">
+            <div class="col-md">
+                <div class="card-deck">
+                    <div id="ipCard" class="card border-primary">
+                        <img src="./assets/images/ip-man.jpg" class="card-img-top" alt="Ip Man">
+                        <div class="card-body">
+                            <h5 class="card-title text-primary">Ip Man</h5>
+                        </div>
+                        <div class="card-footer">
+                            <small id="ipHp" class="text-success">HP: 4000</small>
+                        </div>
+                    </div>
+                    <div id="saiCard" class="card border-primary">
+                        <img src="./assets/images/saitama.jpg" class="card-img-top" alt="One Punch Man">
+                        <div class="card-body">
+                            <h5 class="card-title text-primary">One-Punch Man</h5>
+                        </div>
+                        <div class="card-footer">
+                            <small id="saiHp" class="text-success">HP: 5000</small>
+                        </div>
+                    </div>
+                    <div id="gokuCard" class="card border-primary">
+                        <img src="./assets/images/goku.jpg" class="card-img-top" alt="Goku">
+                        <div class="card-body">
+                            <h5 class="card-title text-primary">Goku</h5>
+                        </div>
+                        <div class="card-footer">
+                            <small id="gokuHp" class="text-success">HP: 9990</small>
+                        </div>
+                    </div>
+                    <div id="chuckCard" class="card border-primary">
+                        <img src="./assets/images/chuck.jpg" class="card-img-top" alt="The Chuck Norris">
+                        <div class="card-body">
+                            <h5 class="card-title text-primary">Chuck Norris</h5>
+                        </div>
+                        <div class="card-footer">
+                            <small id="chuckHp" class="text-success">HP: 4500</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     
+    <div id="duelCont" class="container-fluid">
+        <div class="row center-block">
+            <div id="playerSection" class="col-md-3">
+                <div id="playerCard" class="card border-success">
+                    <img src="./assets/images/player-generic.png" class="card-img-top" alt="Ip Man">
+                    <div class="card-body">
+                        <h5 class="card-title text-success">Player's Character</h5>
+                    </div>
+                    <div class="card-footer">
+                        <small id="playerHp" class="text-success">HP: ???</small>
+                    </div>
+                </div>
+            </div>
+            <div id="fightSection" class="col-md-6">
+                <div class="row">
+                    <p id="fightHeader">Fight Section</p>
+                </div>
+                <div class="row justify-content-center">
+                    <button id="fightBtn" onclick="">Fight!</button>
+                </div>
+                <div class="row">
+                    <p id="dmgText"></p>
+                </div>
+            </div>
+            <div id="defenderSection" class="col-md-3">
+                <div id="defenderCard" class="card border-danger">
+                    <img src="./assets/images/defender-generic.png" class="card-img-top" alt="Ip Man">
+                    <div class="card-body">
+                        <h5 class="card-title text-danger">Defender's Character</h5>
+                    </div>
+                    <div class="card-footer">
+                        <small id="defenderHp" class="text-success">HP: ???</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="endContentCont" class="container">
+        <div class="row">
+            <div class="col-md">
+                <p id="winLoseMsg">the message that appears when you won or lose</p>
+            </div>
+        </div>
+        <div id="resetSection" class="row justify-content-center">
+            <button type="reset">reset</button>
+        </div>
+    </div>
+    
+
+    <script src='https://code.jquery.com/jquery-3.3.1.slim.min.js' integrity='sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo' crossorigin='anonymous'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js' integrity='sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1' crossorigin='anonymous'></script>
+    <script src='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js' integrity='sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM' crossorigin='anonymous'></script>
+    <script src="./assets/js/game.js"></script>
 </body>
 </html>
